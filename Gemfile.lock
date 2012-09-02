@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (3.2.8)
       actionpack (= 3.2.8)
@@ -137,6 +137,8 @@ GEM
       libwebsocket (~> 0.1.3)
       multi_json (~> 1.0)
       rubyzip
+    shoulda-matchers (1.3.0)
+      activesupport (>= 3.0.0)
     sprockets (2.1.3)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -178,6 +180,7 @@ DEPENDENCIES
   rails (= 3.2.8)
   rspec-rails (>= 2.10.1)
   sass-rails (~> 3.2.3)
+  shoulda-matchers
   turnip
   uglifier (>= 1.0.3)
   unicorn-rails
