@@ -1,0 +1,18 @@
+common: &common
+  min_messages: warning
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: bendylunch
+
+development:
+  database: bendylunch_development
+  <<: *common
+
+test:
+  database: bendylunch_test
+  <<: *common
+
+production:
+  database: bendylunch_production
+  <<: *common
