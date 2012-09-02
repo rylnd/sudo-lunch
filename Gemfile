@@ -22,6 +22,7 @@ end
 
 group :development do
   gem "haml-rails", ">= 0.3.4"
+  gem 'heroku_san'
 end
 
 group :test do
