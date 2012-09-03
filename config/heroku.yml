@@ -16,6 +16,4 @@ bendylunch:
     BUNDLE_WITHOUT: "development:test"
   addons:
     - pgbackups:auto-week
-    - memcache:5mb
-    - logging:basic
-    - scheduler:standard
+    - newrelic:standard
