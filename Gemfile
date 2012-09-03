@@ -6,6 +6,7 @@ gem 'pg'
 gem 'activeadmin'
 gem 'jquery-rails'
 gem "haml", ">= 3.1.6"
+gem 'newrelic_rpm'
 gem "unicorn-rails", :platform => :ruby
 
 group :assets do
