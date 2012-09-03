@@ -3,6 +3,7 @@ source :rubygems
 gem 'rails', '3.2.8'
 gem 'pg'
 
+gem 'activeadmin'
 gem 'jquery-rails'
 gem "haml", ">= 3.1.6"
 gem "unicorn-rails", :platform => :ruby
