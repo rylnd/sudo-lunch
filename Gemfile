@@ -7,7 +7,6 @@ gem 'activeadmin'
 gem 'jquery-rails'
 gem "haml", ">= 3.1.6"
 gem 'newrelic_rpm'
-gem "unicorn-rails", :platform => :ruby
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
