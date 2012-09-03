@@ -11,8 +11,8 @@ namespace :restaurants do
     puts "#{Restaurant.count} restaurants in the database"
   end
 
-  desc 'Load restaurants from support/restaurants.csv'
-  task :load_from_csv => :environment do
+  desc 'import restaurants from support/restaurants.csv'
+  task :import => :environment do
     load_restaurants_from_csv
   end
 end
