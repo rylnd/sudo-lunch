@@ -11,6 +11,7 @@ gem 'newrelic_rpm'
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
+  gem 'compass-rails'
   gem 'uglifier'
 end
 
