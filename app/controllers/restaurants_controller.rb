@@ -1,6 +1,5 @@
 class RestaurantsController < ApplicationController
   def random
-    @restaurant = Restaurant.first(order: 'RANDOM()') ||
-      Restaurant.new(name: 'the kitchen')
+    @restaurant = Restaurant.first order: 'RANDOM()'
   end
 end
