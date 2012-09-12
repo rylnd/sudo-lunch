@@ -1,3 +1,16 @@
 // Place all the styles related to the restaurants controller here.
+
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  color: #333;
+  background: #FFF url(/assets/noise.png);
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 3em;
+  text-shadow: 1px 1px 4px #CCC;
+}
