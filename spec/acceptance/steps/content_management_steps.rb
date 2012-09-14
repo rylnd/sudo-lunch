@@ -8,6 +8,20 @@ step 'I am logged in as an admin' do
   click_on 'Login'
 end
 
-step 'I have an admin' do
-  @admin = create(:admin_user, email: 'admin@example.com', password: 'password')
+step 'I add a new Restaurant' do
+  click_on 'Restaurants'
+  click_on 'New Restaurant'
+
+  name = 'New Restaurant'
+  fill_in 'Name', with: name
+
+  @restaurant = Restaurant.new(name: name)
+
+  click_on 'Create Restaurant'
+end
+
+step 'I edit that Restaurant' do
+  visit edit_admin_restaurant_path(@restaurant)
+  fill_in 'Name', with: 'Edited Restaurant'
+  click_on 'Update Restaurant'
 end
