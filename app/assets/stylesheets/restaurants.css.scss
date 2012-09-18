@@ -4,8 +4,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  color: #333;
+  color: $text-color;
   background: #FFF image-url('noise.png');
+}
+
+a, a:visited, a:hover {
+  color: $text-color;
+  text-decoration: none;
 }
 
 .restaurant {
@@ -23,12 +28,21 @@ body {
     font-size: 0.4em;
 
     .tag {
-      display: inline;
-      background: $tag-background;
-      border: 1px solid $tag-border;
-      @include border-radius(8px);
-      padding: 0.2em 0.5em;
-      margin-left: 0.5em;
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        background: $tag-background;
+        border: 1px solid $tag-border;
+        @include border-radius(8px);
+
+        margin-left: 0.5em;
+        padding: 0.2em 0.5em;
+
+        &:hover {
+          background: $tag-hover-background;
+        }
+      }
     }
   }
 }
