@@ -4,10 +4,9 @@ step 'I should see that Restaurant listed' do
 end
 
 step 'I should see the changes in the list of Restaurants' do
-  step 'I should see that Restaurant listed'
+  page.should have_content('Edited Restaurant')
 end
 
 step "I should see the tag :tag on the restaurant's page" do |tag|
-  visit root_path
   page.should have_content(tag)
 end

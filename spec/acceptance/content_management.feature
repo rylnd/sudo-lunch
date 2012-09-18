@@ -22,4 +22,5 @@ Feature: Content Management
   Scenario: Tagging a Restaurant
     Given I have a Restaurant
     When I tag that restaurant with 'vegan'
+    And I am on the random page
     Then I should see the tag 'vegan' on the restaurant's page

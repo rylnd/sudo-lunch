@@ -3,5 +3,9 @@ step 'I have an admin' do
 end
 
 step 'I have a Restaurant' do
-  @restaurant = create(:restaurant, name: 'Restaurant')
+  @restaurant = create(:restaurant)
+end
+
+step 'I have a Restaurant tagged with :tag' do |tag|
+  create(:restaurant, tag_list: tag)
 end
