@@ -1,1 +1,2 @@
-%li.tag= tag.name
+%li.tag
+  = link_to(tag.name, tagged_restaurants_path(tag.name))

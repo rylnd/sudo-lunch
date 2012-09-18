@@ -18,5 +18,5 @@ step 'I should be on the :page_name' do |page_name|
 end
 
 step 'I should be at the tags page for :tag' do |tag|
-  page.current_path.should == tags_path(tag)
+  page.current_path.should == tagged_restaurants_path(tag)
 end
