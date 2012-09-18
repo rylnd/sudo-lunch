@@ -7,6 +7,8 @@ gem 'activeadmin'
 gem 'jquery-rails'
 gem "haml"
 
+gem 'acts-as-taggable-on'
+
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'

@@ -18,3 +18,8 @@ Feature: Content Management
     Given I have a Restaurant
     When I edit that Restaurant
     Then I should see the changes in the list of Restaurants
+
+  Scenario: Tagging a Restaurant
+    Given I have a Restaurant
+    When I tag that restaurant with 'vegan'
+    Then I should see the tag 'vegan' on the restaurant's page

@@ -3,6 +3,7 @@ class RestaurantsController < ApplicationController
 
   def random
     @restaurant = Restaurant.first order: 'RANDOM()'
+    @restaurant ||= Restaurant.new name: 'the kitchen'
     respond_with @restaurant
   end
 

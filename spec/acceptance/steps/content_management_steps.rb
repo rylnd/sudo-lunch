@@ -25,3 +25,9 @@ step 'I edit that Restaurant' do
   fill_in 'Name', with: 'Edited Restaurant'
   click_on 'Update Restaurant'
 end
+
+step 'I tag that restaurant with :tag' do |tag|
+  visit edit_admin_restaurant_path(@restaurant)
+  fill_in 'Tags', with: tag
+  click_on 'Update Restaurant'
+end

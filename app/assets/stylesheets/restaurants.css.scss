@@ -8,9 +8,27 @@ body {
   background: #FFF image-url('noise.png');
 }
 
-h1 {
+.restaurant {
   text-align: center;
-  margin: 1em 0;
-  font-size: 3em;
-  text-shadow: 1px 1px 4px #CCC;
+  margin: 0.5em 0;
+  font-size: 2em;
+
+  h1 {
+    margin: 0.2em auto;
+    font-size: 3em;
+    text-shadow: 1px 1px 4px #CCC;
+  }
+
+  .tags {
+    font-size: 0.4em;
+
+    .tag {
+      display: inline;
+      background: $tag-background;
+      border: 1px solid $tag-border;
+      @include border-radius(8px);
+      padding: 0.2em 0.5em;
+      margin-left: 0.5em;
+    }
+  }
 }

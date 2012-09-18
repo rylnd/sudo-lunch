@@ -1,5 +1,7 @@
 class Restaurant < ActiveRecord::Base
-  attr_accessible :name
+  acts_as_taggable
+
+  attr_accessible :name, :tag_ids, :tag_list
 
   validates :name,
     presence: true,

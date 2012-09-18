@@ -7,6 +7,9 @@
 // Import font-face declarations and font classes
 @import 'partials/fonts';
 
+// Import color definitions
+@import 'partials/colors';
+
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
 
@@ -56,5 +59,10 @@ body.two-col {
     @include column($content-columns, true);
   }
 }
+
+// CSS3
+@import 'compass/css3';
+
+ul, ol { list-style: none; }
 
 @import 'restaurants';

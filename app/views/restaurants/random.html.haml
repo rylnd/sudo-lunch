@@ -1,3 +1,6 @@
-%h1.afs-ubuntu
+.restaurant.afs-pt-serif
   You should go to
-  = @restaurant.try :name
+  %h1.afs-ubuntu
+    = @restaurant.name
+  %ul.tags
+    = render partial: 'tag', collection: @restaurant.tags
